@@ -10,4 +10,7 @@ export const FormStyle = styled.section`
     padding-top: 16px;
     padding-bottom: 16px;
     background-color: ${theme.primaryColor};
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 `

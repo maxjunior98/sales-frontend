@@ -1,7 +1,9 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import GlobalStyle from 'components/global';
+import { Body } from 'components/body/body';
 import ReactDOM from 'react-dom/client';
-import React from 'react';
 import Login from 'pages/store/login';
+import React from 'react';
 
 const router = createBrowserRouter([
   {
@@ -13,7 +15,10 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <GlobalStyle />
+    <Body>
+      <RouterProvider router={router} />
+    </Body>
   </React.StrictMode>
 );
 
